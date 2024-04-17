@@ -1,13 +1,87 @@
-#main {
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  height: 100vh;
+}
+
+#main {
+  max-width: 800px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#github-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 70%;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
 }
 
 #github-container {
   display: flex;
+  justify-content: space-between;
 }
 
 ul {
+  flex: 1;
   list-style: none;
+  padding: 0;
+}
+
+.user,
+.repo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.user img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user a,
+.repo a {
+  text-decoration: none;
+  color: #333;
+}
+
+.user:hover,
+.repo:hover {
+  background-color: #f9f9f9;
 }
